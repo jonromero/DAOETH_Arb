@@ -74,8 +74,8 @@ def run():
 def send_sms(eth_price):
     client = TwilioRestClient(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN) 
     client.sms.messages.create(
-        to="+14152835417", 
-        from_="+1 415-599-2671",
+        to="yournumber", 
+        from_="from_number",
         body="1353-2236 ETH:" + str(eth_price))
     
     
